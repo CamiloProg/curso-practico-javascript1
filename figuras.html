@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas | Curso Practico de JavaScript</title>
+    <style>
+        body{
+            background-color: azure;
+            margin: 24px;
+        }
+        h1{
+            border: 3px solid mediumpurple;
+            border-radius: 15px;
+            background-color: powderblue;
+        }
+        .calcular{
+            display: flex;
+        }
+        .cuadrado{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background-color: powderblue;
+            border: 3px solid mediumpurple;
+            border-radius: 24px;
+            width: 500px;
+            margin-right: 100px;
+            padding: 20px;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        .triangulo{
+            border: 3px solid mediumpurple;
+            background-color: powderblue;
+            border-radius: 24px;
+            width: 500px;
+            padding: 20px;
+        }
+        label{
+            display: inline-block;
+            width: 300px;
+            margin-bottom: 12px;
+        }
+        input{
+            width: 50px;
+        }
+        form{
+            margin:none;
+        }
+        .botones{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .boton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            border: 3px solid mediumpurple;
+            background-color: azure;
+            width: 150px;
+            height: 80px;
+            margin: 4px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Figuras geometricas
+    </h1>
+</header>
+<div class="calcular">
+<section class="cuadrado">
+    <h2>Calcula el area y perimetro de un cuadrado</h2>
+    <div class="img">
+    <img src="./img/cuadrado-hueco.png" alt="">
+</div>
+    <form>
+        <label for="inputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+        </label>
+        <input id="inputCuadrado" type="number" >
+        <div class="botones">
+        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+        <button type="button"onclick="calcularAreaCuadrado()">Calcular area</button>
+        </div>
+    </form>
+
+    
+</section>
+
+
+<section class="triangulo">
+    <h2>Calcula la altura de tu triangulo isosceles<br>(este se caracteriza por tenr 2 lados iguales)</h2>
+    
+    <form>
+        <div class="img">
+            <img src="./img/R.png" alt="">
+        </div>
+        <label for="ladoTriangulo1">
+            Escribe el primer lado de tu Triangulo:
+        </label>
+        <input id="ladoTriangulo1" type="number" >
+        <br>
+        <label for="ladoTriangulo2">
+            Escribe el segundo lado de tu Triangulo:
+        </label>
+        <input id="ladoTriangulo2" type="number" >
+        <br>
+        <label for="ladoTriangulo3">
+            Escribe el tercer lado de tu Triangulo:
+        </label>
+        <input id="ladoTriangulo3" type="number" >
+        <div class="boton">
+        <button type="button" onclick="calcularAlturaTriangulo()">Calcula la altura :)</button>
+        </div>
+    </form>
+
+
+</section>
+</div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
