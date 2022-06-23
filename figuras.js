@@ -83,5 +83,6 @@ function calcularAlturaTriangulo(){
     const value3 = lado3.value;
 
     const altura = alturaIsosceles(value1,value2,value3);
+    alert(altura);
     
 }

@@ -7,8 +7,11 @@
     <title>Figuras geometricas | Curso Practico de JavaScript</title>
     <style>
         body{
-            background-color: azure;
+            background-image: url(https://th.bing.com/th/id/OIP.LpBQtg_1YNaFiG2NuUqjKwHaE7?pid=ImgDet&rs=1);
+            background-repeat: no-repeat;
+            background-size: cover;
             margin: 24px;
+            
         }
         h1{
             border: 3px solid mediumpurple;
@@ -17,6 +20,8 @@
         }
         .calcular{
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .cuadrado{
             display: grid;
@@ -32,6 +37,13 @@
             display: flex;
             justify-content: center;
             margin-bottom: 16px;
+        }
+        .img img{
+            position: relative;
+        }
+        .img p{
+            position: absolute;
+            top: 280px;
         }
         .triangulo{
             border: 3px solid mediumpurple;
@@ -82,6 +94,7 @@
     <h2>Calcula el area y perimetro de un cuadrado</h2>
     <div class="img">
     <img src="./img/cuadrado-hueco.png" alt="">
+    <p>hola</p>
 </div>
     <form>
         <label for="inputCuadrado">

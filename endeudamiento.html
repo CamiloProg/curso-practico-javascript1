@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://th.bing.com/th/id/OIP.LpBQtg_1YNaFiG2NuUqjKwHaE7?pid=ImgDet&rs=1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .cuadro{
+            display: grid;
+            width: 500px;
+            height: 300px; 
+            ; 
+        }
+        .cuerpo{
+            width: 720px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:darkblue;
+            border: 1px solid darkblue;
+            text-align: center;
+        }
+        .cuerpo img{
+            width: 200px;
+        }
+        input{
+            margin-bottom: 12px;
+            background-color: bisque;
+            color: darkblue;
+            font-weight: bold;
+        }
+        button{
+            border-radius: 28px;
+            border-color: blue;
+            background-color:darkblue;
+            color: white;
+        }
+        #capacidad{
+            margin-bottom: 24px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cuerpo">
+    <h1>Sabes cual es tu capacidad de endeudamiento?</h1>
+    <img src="https://media.istockphoto.com/vectors/cartoon-a-businessman-paid-his-debt-vector-id1059188164?k=6&m=1059188164&s=612x612&w=0&h=QCkIW-5sbfgDZPBUrzSIzH1ik7TJC3c0L3W3AJOvfaI=" alt="">
+    <div class="cuadro">
+    <p class="">Esta es importante para saber, para nunca excederte de este porcentaje y asi no caer en deudas que nunca podras pagar</p>
+    <label for="salario">Lo primero que necesitamos es tu salario mensual: </label>
+    <input type="number" id="salario">
+    <label for="gastos">Ahora, tus deudas y gastos mensuales en total</label>
+    <input type="number" id="gastos">
+    <button type="button" onclick="calcularCapaciadEndeudamiento()">Calcula tu capacidad de endeudamiento!</button>
+    <p id="capacidad"></p>
+</div>
+</div>
+
+
+
+    <script src="./endeudamiento.js"></script>
+</body>
+</html>
